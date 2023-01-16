@@ -10,13 +10,8 @@
         <StackPanel>
             <TextBlock FontSize="18" HorizontalAlignment="Center">Калькулятор</TextBlock>
             <GroupBox FontSize="14" Header="Выберите арифметическую операцию">
-                <ComboBox Name="cmbOperation">
-                    <ComboBoxItem Content="Сложение"/>
-                    <ComboBoxItem Content="Вычитание"/>
-                    <ComboBoxItem Content="Умножение"/>
-                    <ComboBoxItem Content="Деление"/>
-                </ComboBox>
-                
+                <ComboBox Name="cmbOperation"></ComboBox>
+  
             </GroupBox>
             <Grid>
                 <TextBox Width="55" Height="30" Name="firstOperand" HorizontalAlignment="Left" Margin="300,5,5,15"></TextBox>

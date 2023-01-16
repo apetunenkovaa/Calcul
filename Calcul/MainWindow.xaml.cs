@@ -23,6 +23,18 @@ namespace Calcul
         public MainWindow()
         {
             InitializeComponent();
+            Model.tbCombo = TBSurname;
+            CBSurname.ItemsSource = Model.datalist;
+        }
+
+        private void BtnCount_Click(object sender, RoutedEventArgs e)
+        {
+            Model.Count++;
+        }
+
+        private void CBSurname_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Model.Combo = CBSurname.SelectedIndex;
         }
     }
 }
